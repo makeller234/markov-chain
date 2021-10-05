@@ -2,6 +2,7 @@
 
 import random
 import pprint
+import sys
 
 
 
@@ -92,10 +93,10 @@ def make_text(chains):
 
 
 #input_path = 'green-eggs.txt'
-input_path ='gettysburg.txt'
+#input_path ='gettysburg.txt'
 
 # Open the file and turn it into one long string
-input_text = open_and_read_file(input_path)
+input_text = open_and_read_file(sys.argv[1])
 
 # Get a Markov chain
 chains = make_chains(input_text)
